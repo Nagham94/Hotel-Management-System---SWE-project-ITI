@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,7 +34,19 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Booking.h" />
+		<Unit filename="include/Guest.h" />
+		<Unit filename="include/Hotel.h" />
+		<Unit filename="include/Person.h" />
+		<Unit filename="include/Receptionist.h" />
+		<Unit filename="include/Room.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Booking.cpp" />
+		<Unit filename="src/Guest.cpp" />
+		<Unit filename="src/Hotel.cpp" />
+		<Unit filename="src/Person.cpp" />
+		<Unit filename="src/Receptionist.cpp" />
+		<Unit filename="src/Room.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

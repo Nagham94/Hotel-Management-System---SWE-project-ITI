@@ -18,3 +18,19 @@
 1767486344 source:c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\src\person.cpp
 	"Person.h"
 
+1767486489 source:c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\src\booking.cpp
+	"Booking.h"
+
+1767486489 c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\include\booking.h
+
+1767486474 source:c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\src\receptionist.cpp
+	"Receptionist.h"
+
+1767486474 c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\include\receptionist.h
+	<Person.h>
+
+1767486532 source:c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\src\room.cpp
+	"Room.h"
+
+1767486532 c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\include\room.h
+

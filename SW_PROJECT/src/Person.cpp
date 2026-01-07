@@ -1,11 +1,6 @@
 #include "Person.h"
 
-Person::Person()
-{
-    //ctor
-}
-
-Person::~Person()
-{
-    //dtor
+Person::Person(string name, string phone) {
+    this->name = name;
+    this->phone = phone;
 }

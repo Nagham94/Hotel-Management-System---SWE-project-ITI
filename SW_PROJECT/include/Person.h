@@ -2,15 +2,20 @@
 #define PERSON_H
 
 
-class Person
-{
-    public:
-        Person();
-        virtual ~Person();
+#include <iostream>
+#include <string>
+using namespace std;
 
-    protected:
+class Person {
+protected:
+    string name;
+    string phone;
 
-    private:
+public:
+    Person(string name, string phone);
+    virtual void displayInfo() = 0;   // Pure virtual function
+    virtual ~Person() {}              // Virtual destructor
 };
+
 
 #endif // PERSON_H

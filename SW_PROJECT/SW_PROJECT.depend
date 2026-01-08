@@ -1,36 +1,55 @@
 # depslib dependency file v1.0
-1446667744 source:c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\main.cpp
+1767810003 source:c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\main.cpp
 	<iostream>
+	<limits>
+	"Hotel.h"
+	"Guest.h"
+	"Room.h"
+	"Booking.h"
 
-1767486374 source:c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\src\guest.cpp
+1767810588 source:c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\src\guest.cpp
 	"Guest.h"
 
-1767486374 c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\include\guest.h
-	<Person.h>
+1767810588 c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\include\guest.h
+	"Person.h"
 
-1767486344 c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\include\person.h
+1767808719 c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\include\person.h
+	<iostream>
+	<string>
 
 1767486305 source:c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\src\hotel.cpp
 	"Hotel.h"
 
-1767486305 c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\include\hotel.h
-
-1767486344 source:c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\src\person.cpp
-	"Person.h"
-
-1767486489 source:c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\src\booking.cpp
+1767862385 c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\include\hotel.h
+	<vector>
+	"Room.h"
 	"Booking.h"
 
-1767486489 c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\include\booking.h
+1767808719 source:c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\src\person.cpp
+	"Person.h"
 
-1767486474 source:c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\src\receptionist.cpp
+1767811090 source:c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\src\booking.cpp
+	"Booking.h"
+
+1767862392 c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\include\booking.h
+	"Guest.h"
+	"Room.h"
+	<iostream>
+	<string>
+
+1767809532 source:c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\src\receptionist.cpp
 	"Receptionist.h"
+	<iostream>
 
-1767486474 c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\include\receptionist.h
-	<Person.h>
+1767809496 c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\include\receptionist.h
+	<string>
+	"Person.h"
+	"Hotel.h"
+	"Guest.h"
 
-1767486532 source:c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\src\room.cpp
+1767810588 source:c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\src\room.cpp
 	"Room.h"
 
-1767486532 c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\include\room.h
+1767810588 c:\users\somia\pictures\iti\sw\hotel-management-system---swe-project-iti\sw_project\include\room.h
+	<string>
 

@@ -1,18 +1,28 @@
 #ifndef RECEPTIONIST_H
 #define RECEPTIONIST_H
 
-#include <Person.h>
+#include <string>
 
+#include "Person.h"
+#include "Hotel.h"
+#include "Guest.h"
 
-class Receptionist : public Person
-{
-    public:
-        Receptionist();
-        virtual ~Receptionist();
+class Receptionist : public Person {
+private:
+    int employeeId;
 
-    protected:
+public:
+    // Constructor
+    Receptionist(int id, string name, string phone);
 
-    private:
+    // Methods
+    void createBooking(Hotel& hotel, Guest& guest, int nights);
+    void checkInGuest(Hotel& hotel, Guest& guest);
+    void checkOutGuest(Hotel& hotel, Guest& guest);
+    void viewRooms(Hotel& hotel);
+    void viewBookings(Hotel& hotel);
+
+    int getEmployeeID();
 };
 
-#endif // RECEPTIONIST_H
+#endif

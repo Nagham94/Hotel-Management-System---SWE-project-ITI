@@ -4,6 +4,7 @@
 #include "Guest.h"
 #include "Room.h"
 #include <iostream>
+#include <string>
 using namespace std;
 
 /* Booking class definition */
@@ -13,6 +14,9 @@ using namespace std;
    - Guest guest;
    - Room room;
    - int numberOfNights;
+   - BookingStatus status;
+   - string checkInDate;
+   - string checkOutDate;
 
     Methods:
     + Booking(int id, Guest guest, Room room, int nights);
@@ -22,23 +26,30 @@ using namespace std;
     + Guest getGuest();
 */
 
+enum BookingStatus {
+    CONFIRMED,
+    CHECKED_IN,
+    CHECKED_OUT
+};
+
 class Booking
 {
     public:
-        Booking(int id, Guest guest, Room room, int nights){
-            bookingId = id;
-            this->guest = guest;
-            this->room = room;
-            numberOfNights = nights;
-        };
-        double calculateTotal(){
-            return room.getPrice() * numberOfNights;
-        };
-        void confirmBooking(){
-            room.setAvailability(false);
-        };
-        int getBookingId(){ return bookingId; };
-        Guest getGuest(){ return guest; };
+        Booking(int id, Guest& guest, Room& room, int nights);
+        virtual ~Booking();
+        double calculateTotal();
+        void confirmBooking();
+        void checkIn(string date);
+        void checkOut(string date);
+        int getBookingId();
+        int getRoomNumber();
+        int getNumberOfNights();
+        Guest getGuest();
+        Room getRoom();
+        BookingStatus getStatus();
+        string getStatusString();
+        string getCheckInDate();
+        string getCheckOutDate();
 
     protected:
 
@@ -47,6 +58,9 @@ class Booking
         Guest guest;
         Room room;
         int numberOfNights;
+        BookingStatus status;
+        string checkInDate;
+        string checkOutDate;
 };
 
 #endif // BOOKING_H

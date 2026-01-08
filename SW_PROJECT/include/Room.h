@@ -22,17 +22,13 @@ using namespace std;
 class Room
 {
     public:
-        Room(int number, string type, double price){
-            roomNumber = number;
-            this->type = type;
-            pricePerNight = price;
-            isAvailable = true; // Rooms are available by default
-        };
-        bool checkAvailability(){ return isAvailable; };
-        void setAvailability(bool status){ isAvailable = status; };
-        double getPrice(){ return pricePerNight; };
-        string getType(){ return type; };
-        int getRoomNumber(){ return roomNumber; };
+        Room(int number, string type, double price);
+        virtual ~Room();
+        bool checkAvailability() const;
+        void setAvailability(bool status);
+        double getPrice() const;
+        string getType() const;
+        int getRoomNumber() const;
 
     protected:
 

@@ -9,8 +9,9 @@ private:
 
 public:
     Guest(int id, string name, string phone);
-    int getGuestId();
+    int getGuestId() const;
     void displayInfo() override;
+    string getName() const;
 };
 
 #endif // GUEST_H
